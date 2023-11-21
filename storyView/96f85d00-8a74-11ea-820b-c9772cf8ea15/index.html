@@ -1,0 +1,228 @@
+<!DOCTYPE html><html style="font-size: 16px;"><head>
+<title>Taking a Class in Apache Language (Nṉee Biyáti’) | The Storytelling Project</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<script src="../../js/infusion-all.js"></script><style type="text/css">.fl-progEnhance-basic, .fl-ProgEnhance-basic { display: none; } .fl-progEnhance-enhanced, .fl-ProgEnhance-enhanced { display: block; }</style>
+
+<!-- UIO stylesheets -->
+<link rel="stylesheet" type="text/css" href="../../css/Enactors.css">
+<link rel="stylesheet" type="text/css" href="../../css/PrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="../../css/SeparatedPanelPrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="../../css/Orator.css">
+
+<script src="../../js/handlebars.js"></script>
+<script src="../../js/markdown-it.js"></script>
+<script src="../../js/binder_1.js"></script>
+<script src="../../js/transforms.js"></script>
+<script src="../../js/equals.js"></script>
+<script src="../../js/helper.js"></script>
+<script src="../../js/jsonify.js"></script>
+<script src="../../js/md-common.js"></script>
+<script src="../../js/messageHelper.js"></script>
+<script src="../../js/renderer.js"></script>
+<script src="../../js/ajaxCapable.js"></script>
+<script src="../../js/hasRequiredOptions.js"></script>
+<script src="../../js/md-client.js"></script>
+<script src="../../js/messageHelper_1.js"></script>
+<script src="../../js/renderer_1.js"></script>
+<script src="../../js/templateAware.js"></script>
+<script src="../../js/templateFormControl.js"></script>
+<script src="../../js/templateManager.js"></script>
+<script src="../../js/templateMessage.js"></script>
+<script src="../../js/templateRequestAndRender.js"></script>
+
+<script src="../../js/dynamicViewComponentManager.js"></script>
+<script src="../../js/binder.js"></script>
+<script src="../../js/block.js"></script>
+<script src="../../js/block-audio.js"></script>
+<script src="../../js/block-image.js"></script>
+<script src="../../js/block-text.js"></script>
+<script src="../../js/block-video.js"></script>
+<script src="../../js/block-timeBased.js"></script>
+<script src="../../js/blockUi.js"></script>
+<script src="../../js/blockUi-audioBlockViewer.js"></script>
+<script src="../../js/blockUi-imageBlockViewer.js"></script>
+<script src="../../js/blockUi-textBlockViewer.js"></script>
+<script src="../../js/blockUi-videoBlockViewer.js"></script>
+<script src="../../js/blockUi-timeBased.js"></script>
+<script src="../../js/base-page-storyView.js"></script>
+<script src="../../js/base-page-storyNotFound.js"></script>
+<script src="../../js/base-page.js"></script>
+<script src="../../js/story.js"></script>
+<script src="../../js/templateManager_1.js"></script>
+<script src="../../js/ui.js"></script>
+<script src="../../js/ui-authorControls.js"></script>
+<script src="../../js/ui-menu.js"></script>
+<script src="../../js/ui-storyViewer.js"></script>
+<script src="../../js/uploader.js"></script>
+<script src="../../js/transforms_1.js"></script>
+<script src="../../js/UIOMultilingualDemo.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+
+<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700|Work+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../../css/storyTelling.css">
+<link rel="stylesheet" href="../../css/fluid.css">
+
+<script src="../../js/storyTellingServerUI.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../../css/aihec.css"></head>
+<body class="fl-theme-prefsEditor-default" style="line-height: 1.15;">
+
+<div class="sjrk-prefsEditor-container">
+    <!-- BEGIN markup for Preference Editor -->
+   <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel" id="fluid-id-238qrri1-1589">
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the mobile view.
+           A separate panel bar for mobile displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-smallScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-238qrri1-2468" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-238qrri1-2468" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+
+       <!-- This is the div that will contain the Preference Editor component -->
+       <div class="flc-slidingPanel-panel flc-prefsEditor-iframe" id="fluid-id-238qrri1-2468" aria-label="User Preferences" role="group" style="height: 0px;"><iframe class="flc-iframe fl-prefsEditor-separatedPanel-iframe" src="../../SeparatedPanelPrefsEditorFrame.html" style="display: none; height: 0px;"></iframe></div>
+
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the desktop view.
+           A separate panel bar for desktop displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-wideScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-238qrri1-2468" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-238qrri1-2468" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+   </div>
+   <!-- END markup for Preference Editor -->
+</div>
+
+<div class="sjrk-st-author-controls-container sjrkc-st-author-controls-container" id="fluid-id-238qrri1-5397">
+</div>
+<header class="sjrk-st-page-header-container sjrkc-st-page-header-container"><div class="sjrk-st-page-header">
+    <a class="sjrk-st-page-header-logo" href="http://www.aihec.org/" aria-label="The American Indian Higher Education Consortium"></a>
+    <div class="sjrk-st-page-header-main-title">The<br>Storytelling<br>Project</div>
+</div>
+<div class="sjrk-st-top-menu">
+    <nav>
+        <ul>
+            <li>
+                <a href="../../welcome.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="../../storyBrowse.html">
+                    Browse Stories
+                </a>
+            </li>
+            <li>
+                <a href="../storyExample/index.html">
+                    Help
+                </a>
+            </li>
+        </ul>
+    </nav>
+            
+</div>
+</header>
+
+<!-- This div is for the table of contents feature provided by the Preferences Editor -->
+<div class="flc-toc-tocContainer toc"></div>
+<main class="sjrk-st-page-content-container">
+    <div class="sjrk-main-container">
+        <div class="sjrk-st-menu sjrkc-st-menu" id="fluid-id-238qrri1-5390"></div>
+        <div class="sjrk-st-story-viewer sjrkc-st-story-viewer" id="fluid-id-238qrri1-3644"><div class="sjrk-st-page-body">
+    <section class="sjrk-st-lr-knockout">
+            <h1>Taking a Class in Apache Language (Nṉee Biyáti’)</h1>
+    </section>
+    <section class="sjrk-st-lr-padding">
+        <div lang="en" class="sjrkc-st-story-viewer-main-container sjrk-st-story-viewer-main-container" id="fluid-id-238qrri1-5378"><div class="flc-orator-controller fl-orator-controller" id="fluid-id-238qrri1-5383"><div class="fl-icon-orator" aria-hidden="true"></div><button type="button" class="flc-orator-controller-playToggle" aria-label="play"><span class="fl-orator-controller-playToggle fl-icon-orator-playToggle" aria-hidden="true"></span></button></div>
+            <div class="sjrkc-st-story-details">
+                    <h2 class="sjrkc-st-story-title sjrk-st-story-title">Taking a Class in Apache Language (Nṉee Biyáti’)</h2>
+                    <p class="sjrkc-st-story-author sjrk-st-story-author">by Kenneth Chan</p>
+
+                <div hidden="" class="sjrk-st-language-container">
+                    Language(s): <span class="sjrkc-st-story-language sjrk-st-story-language">
+                        
+                    </span>
+                </div>
+
+                <div class="sjrk-st-tags-container">
+                    Keywords:
+                    <ul class="sjrkc-st-story-list-tags sjrk-st-story-list-tags">
+                            <li>apache, </li>
+                            <li>language, </li>
+                            <li>personal, </li>
+                            <li>learning, </li>
+                            <li>reflection</li>
+                    </ul>
+                </div>
+
+                <div class="sjrkc-st-story-content sjrk-st-story-content"><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-238qrri1-3684">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Dagot'éé! (Hello! How's it going?)</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>Here at San Carlos Apache College, we recognize and celebrate the unique opportunities that we offer to our students here at this Tribal College. Among these are the Apache language, history, and art classes that we are quite certain are not offered in any other institute of higher learning in the world! One of the initiatives that the College kickstarted in Spring 2019 was the encouragement and support of ALL staff to take one of these unique classes, as a way to more deeply connect with our local community and culture. It was an honor for me to be among the first to take Apache Language 101 as an employee!</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-238qrri1-3972">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Getting Ready for Class</p>
+</h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/95669970-8a74-11ea-820b-c9772cf8ea15.jpg" alt="Photo of a tabletop with a notebook full of notes in the Apache language, Apache language flash cards, a voice recorder, a USB flash drive, and a pen.">
+        <p class="sjrk-st-block-text-view"></p><p>Armed with a notebook, voice recorder, video camera, and one of the few Apache-English dictionaries in existence, I took my task as a language learner seriously. I stayed up many long nights reviewing my recordings and immersing myself in the language.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-238qrri1-4259">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Learning about Family</p>
+</h3>
+        <img class="sjrk-st-block-media-preview" src="../../images/95686e30-8a74-11ea-820b-c9772cf8ea15.png" alt="Family tree diagram with Apache kinship terms.">
+        <p class="sjrk-st-block-text-view"></p><p>It is impossible to learn the Apache language without also learning about Apache culture. For example, I got to study the many kinship terms that are essential in Apache culture. I also learned about traditional Apache foods, animals, and songs.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-238qrri1-4548" id="fluid-id-238qrri1-5398">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Teaching Apache to My Daughter</p>
+</h3>
+        <video class="sjrk-st-block-media-preview sjrkc-st-block-media-preview" controls="" src="../../media/9569cdc0-8a74-11ea-820b-c9772cf8ea15.mov">
+            <source src="../../media/9569cdc0-8a74-11ea-820b-c9772cf8ea15.mov">
+            
+        </video>
+        <p class="sjrk-st-block-text-view"></p><p>By the end of the semester, I wrote and illustrated a children's book using what I had learned in my Apache language class. I dedicated this labor of love to her and I was thrilled to see that she enjoyed it. In this video, I'm reading a draft of it to my 2-year-old daughter for the first time, and you can actually see us switch between English, Cantonese, Apache, and American Sign Language as we discuss the story!</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-238qrri1-4852">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Continuing the Journey</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>I had no background in any Native American languages prior to this experience, so this class provided many difficult challenges. I did what I could to fully engage in the course, and reaped many rewards through this venture. To this day, I continue to learn new things in the Apache language, and it allows me to more richly connect with the people of the San Carlos Apache Tribe. Among the Tribe, I have been blessed with many friends, who have helped me along the way. Ahíyi’e! (Thank you!)</p>
+</div>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+        <div class="sjrk-st-story-notFoundNotice sjrkc-st-story-notFoundNotice"></div>
+    </div>
+</main>
+
+<footer class="sjrk-st-page-footer-container sjrkc-st-page-footer-container"><div class="sjrk-st-page-footer-text-container">
+    <p>The Storytelling Project is led by the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a> at OCAD University with an open community of contributors. Supported by the <a href="https://www.hewlett.org/">William and Flora Hewlett Foundation</a> and the <a href="http://www.oakfnd.org/">Oak Foundation</a>.</p>
+
+    <p>Stories on this site are distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 licence</a>. Please email us at <a href="mailto:stories@idrc.ocadu.ca">stories@idrc.ocadu.ca</a> if you wish to remove your story from this website.</p>
+
+</div>
+<div class="sjrk-st-page-footer-logo-container">
+    <a class="sjrk-st-page-footer-oak-logo" href="http://www.oakfnd.org/" aria-label="Oak Foundation Website"></a>
+    <a class="sjrk-st-page-footer-hewlett-logo" href="https://www.hewlett.org/" aria-label="William and Flora Hewlett Foundation Website"></a>
+    <a class="sjrk-st-page-footer-idrc-logo" href="https://idrc.ocadu.ca/" aria-label="Inclusive Design Research Centre Website"></a>
+</div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html><html style="font-size: 16px;"><head>
+<title>Welcome | The Storytelling Project</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<script src="js/infusion-all.js"></script><style type="text/css">.fl-progEnhance-basic, .fl-ProgEnhance-basic { display: none; } .fl-progEnhance-enhanced, .fl-ProgEnhance-enhanced { display: block; }</style>
+
+<!-- UIO stylesheets -->
+<link rel="stylesheet" type="text/css" href="css/Enactors.css">
+<link rel="stylesheet" type="text/css" href="css/PrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="css/SeparatedPanelPrefsEditor.css">
+
+<script src="js/handlebars.js"></script>
+<script src="js/markdown-it.js"></script>
+<script src="js/equals.js"></script>
+<script src="js/helper.js"></script>
+<script src="js/jsonify.js"></script>
+<script src="js/md-common.js"></script>
+<script src="js/messageHelper.js"></script>
+<script src="js/renderer.js"></script>
+<script src="js/ajaxCapable.js"></script>
+<script src="js/hasRequiredOptions.js"></script>
+<script src="js/md-client.js"></script>
+<script src="js/messageHelper_1.js"></script>
+<script src="js/renderer_1.js"></script>
+<script src="js/templateAware.js"></script>
+<script src="js/templateFormControl.js"></script>
+<script src="js/templateManager.js"></script>
+<script src="js/templateMessage.js"></script>
+<script src="js/templateRequestAndRender.js"></script>
+
+<script src="js/base-page.js"></script>
+<script src="js/templateManager_1.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/ui-authorControls.js"></script>
+<script src="js/ui-menu.js"></script>
+<script src="js/UIOMultilingualDemo.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+
+<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700|Work+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/storyTelling.css">
+<link rel="stylesheet" href="css/fluid.css">
+
+<script src="js/storyTellingServerUI.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/aihec.css"></head>
+<body class="fl-theme-prefsEditor-default" style="line-height: 1.15;">
+
+<div class="sjrk-prefsEditor-container">
+    <!-- BEGIN markup for Preference Editor -->
+   <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel" id="fluid-id-alh7z13w-1563">
+	   <!--
+		   This div is for the sliding panel bar that shows and hides the Preference Editor controls in the mobile view.
+		   A separate panel bar for mobile displays is needed to preserver the correct tab order.
+	   -->
+	   <div class="fl-panelBar fl-panelBar-smallScreen">
+		   <span class="fl-prefsEditor-buttons">
+			   <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-alh7z13w-2678" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+			   <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-alh7z13w-2678" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+		   </span>
+	   </div>
+
+	   <!-- This is the div that will contain the Preference Editor component -->
+	   <div class="flc-slidingPanel-panel flc-prefsEditor-iframe" id="fluid-id-alh7z13w-2678" aria-label="User Preferences" role="group" style="height: 0px;"><iframe class="flc-iframe fl-prefsEditor-separatedPanel-iframe" src="SeparatedPanelPrefsEditorFrame.html" style="display: none; height: 0px;"></iframe></div>
+
+	   <!--
+		   This div is for the sliding panel bar that shows and hides the Preference Editor controls in the desktop view.
+		   A separate panel bar for desktop displays is needed to preserver the correct tab order.
+	   -->
+	   <div class="fl-panelBar fl-panelBar-wideScreen">
+		   <span class="fl-prefsEditor-buttons">
+			   <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-alh7z13w-2678" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+			   <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-alh7z13w-2678" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+		   </span>
+	   </div>
+   </div>
+   <!-- END markup for Preference Editor -->
+</div>
+
+<div class="sjrk-st-author-controls-container sjrkc-st-author-controls-container" id="fluid-id-alh7z13w-3607">
+</div>
+<header class="sjrk-st-page-header-container sjrkc-st-page-header-container"><div class="sjrk-st-page-header">
+    <a class="sjrk-st-page-header-logo" href="http://www.aihec.org/" aria-label="The American Indian Higher Education Consortium"></a>
+    <div class="sjrk-st-page-header-main-title">The<br>Storytelling<br>Project</div>
+</div>
+<div class="sjrk-st-top-menu">
+    <nav>
+        <ul>
+            <li>
+                <a href="welcome.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="storyBrowse.html">
+                    Browse Stories
+                </a>
+            </li>
+            <li>
+                <a href="storyView/storyExample/index.html">
+                    Help
+                </a>
+            </li>
+        </ul>
+    </nav>
+            
+</div>
+</header>
+
+<!-- This div is for the table of contents feature provided by the Preferences Editor -->
+<div class="flc-toc-tocContainer toc"></div>
+<main class="sjrk-st-page-content-container">
+    <div class="sjrk-main-container">
+        <div class="sjrk-st-menu sjrkc-st-menu" id="fluid-id-alh7z13w-3608"></div>
+        <div class="sjrk-st-welcome sjrkc-st-welcome"><div class="sjrk-st-page-body">
+    <section class="sjrk-st-lr-knockout">
+        <h1>Welcome</h1>
+    </section>
+    <section class="sjrk-st-lr-2column">
+        <div class="sjrk-st-aihec-welcome-message">
+            <h2>The AIHEC/TCU Storytelling Space</h2>
+            <p>This is a space for TCU students, faculty and community members to create and share stories using any digital media tools you like.  You’ll find support resources and potential collaborators at the AIHEC Mixed Media Collaborative <a href="https://wiki.fluidproject.org/display/AIHEC/AIHEC+Home">wiki</a>. We encourage you to use this space to share personal stories, discuss an issue important to you, and most important - let your creativity loose and have fun!</p>
+
+        </div>
+        <div class="sjrk-st-aihec-welcome-image" aria-role="img" aria-label="The logo of the American Indian Higher Education Consortium"></div>
+    </section>
+</div>
+</div>
+    </div>
+</main>
+
+<footer class="sjrk-st-page-footer-container sjrkc-st-page-footer-container"><div class="sjrk-st-page-footer-text-container">
+    <p>The Storytelling Project is led by the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a> at OCAD University with an open community of contributors. Supported by the <a href="https://www.hewlett.org/">William and Flora Hewlett Foundation</a> and the <a href="http://www.oakfnd.org/">Oak Foundation</a>.</p>
+
+    <p>Stories on this site are distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 licence</a>. Please email us at <a href="mailto:stories@idrc.ocadu.ca">stories@idrc.ocadu.ca</a> if you wish to remove your story from this website.</p>
+
+</div>
+<div class="sjrk-st-page-footer-logo-container">
+    <a class="sjrk-st-page-footer-oak-logo" href="http://www.oakfnd.org/" aria-label="Oak Foundation Website"></a>
+    <a class="sjrk-st-page-footer-hewlett-logo" href="https://www.hewlett.org/" aria-label="William and Flora Hewlett Foundation Website"></a>
+    <a class="sjrk-st-page-footer-idrc-logo" href="https://idrc.ocadu.ca/" aria-label="Inclusive Design Research Centre Website"></a>
+</div>
+</footer>
+
+
+
+
+</body></html>
